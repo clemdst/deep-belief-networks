@@ -57,18 +57,18 @@ class RBM:
       if iter % 10 == 0:
         print(f"Epoch: {iter}, Error: {err}")
 
-    plt.plot(losses)
-    plt.xlabel('Epochs')
-    plt.ylabel('Reconstruction Loss')
-    plt.title('Reconstruction Loss vs Epochs')
-    plt.show()
+    # plt.plot(losses)
+    # plt.xlabel('Epochs')
+    # plt.ylabel('Reconstruction Loss')
+    # plt.title('Reconstruction Loss vs Epochs')
+    # plt.show()
     print('Final L2 Loss:', losses[-1])
 
-    plt.xlabel('Epochs')
-    plt.ylabel('Weights')
-    plt.title('Weights vs Epochs')
-    plt.plot(weights_history)
-    plt.show()
+    # plt.xlabel('Epochs')
+    # plt.ylabel('Weights')
+    # plt.title('Weights vs Epochs')
+    # plt.plot(weights_history)
+    # plt.show()
 
   def generer_image_RBM(self, nb_images, iter_Gibbs, image_size):
     p, q = self.W.shape
