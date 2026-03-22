@@ -78,8 +78,8 @@ class DNN():
 
             _, preds = self.entree_sortie_reseau(data)
             cross_entropy = - np.mean( np.sum(labels * np.log(preds + 1e-9), axis=1) )
-            if epoch % 10 == 0:
-                print(f'Loss at epoch {epoch} : {cross_entropy:.3f}')
+            # if epoch % 10 == 0:
+            print(f'Loss at epoch {epoch} : {cross_entropy:.3f}')
 
 
     def test_DNN(self, test_data, test_labels):

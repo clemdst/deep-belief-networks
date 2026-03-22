@@ -54,8 +54,8 @@ class RBM:
       X_rec = self.sortie_entree(H)
       err = np.mean((X - X_rec) ** 2)
       losses.append(err)
-      if iter % 10 == 0:
-        print(f"Epoch: {iter}, Error: {err}")
+      #if iter % 10 == 0:
+      print(f"Epoch: {iter}, Error: {err}")
 
     # plt.plot(losses)
     # plt.xlabel('Epochs')

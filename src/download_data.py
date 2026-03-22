@@ -44,7 +44,7 @@ def download_mnist(data_dir='./data/'):
     print("MNIST test set downloaded successfully.")
 
 def main():
-    url = 'http://www.cs.nyu.edu/~roweis/data/binaryalphadigs.mat'
+    url = 'http://www.kaggle.com/datasets/angevalli/binary-alpha-digits?select=binaryalphadigs.mat'
     project_dir = 'project'
     file_path = os.path.join(project_dir, 'data', 'binaryalphadigs.mat')
     download_file(url, file_path)
