@@ -1,11 +1,15 @@
-# Deep Belief Networks (RBM / DBN / DNN)
+# Deep Belief Networks and Generative Modeling
 
 Educational implementation of:
 - Restricted Boltzmann Machines (RBM)
 - Deep Belief Networks (DBN)
 - Deep Neural Networks (DNN) with optional unsupervised pretraining
+- Variational Autoencoders (VAEs)
+- Generative Adversarial Networks (GANs)
+- Denoising Diffusion Probabilistic Model (DDPM)
+- Score-Based Generative Modeling (SGM)
 
-The project is used to study generation (Binary AlphaDigits) and classification (MNIST, binarized).
+The project is used to study generation (Binary AlphaDigits and MNIST) and classification (MNIST, binarized). 
 
 ## Project structure
 
@@ -84,6 +88,7 @@ from RBM import RBM
 4. Train in supervised mode with backprop (`retropropagation`).
 5. Evaluate error rate with `test_DNN`.
 6. Compare softmax output probabilities on selected images.
+7. Train the generative models each separately to see the generated images.
 
 ## Main API
 
